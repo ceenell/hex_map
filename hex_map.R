@@ -104,7 +104,6 @@ sites_usa <- sites_stats %>%
 ## this drops any sites outside of the grid area (usa)
 ## also joins site data to the hex map
 site_int <- site_grid %>% st_intersection(sites_usa)
-str(site_int)
 
 ## aggregate site data to each hex cell
 # summarize across rows to count how many observations are in each hex
